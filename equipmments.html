@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="3style.css"> <link rel="stylesheet" href="style (1).css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+    <header>
+        <!--logo-->
+    <div>
+        <img src="mountains-mountain-logo-vector-icon-template-design-emblem-illustration-outdoor-adventure-186166552-removebg-preview.png" width="210px" height="300px" style="padding-bottom: 150px;">
+    </div>
+        <div class="menu-btn active"></div>
+        <div class="navigation active">
+        <div class="navigation-items" style="padding-bottom:130px;">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="organization.html">Organization</a>
+            <a href="equipmments.html">Equipments</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        </div>
+</header>
+<!--video slider-->
+ <section class="home">
+   <video class="video-slide " src="wounderfulisland.mp4" autoplay muted loop></video>
+   <video class="video-slide" src="campingenjoy.mp4" autoplay muted loop></video>
+   <video class="video-slide active" src="adventureofroad.mp4" autoplay muted loop></video>
+   <video class="video-slide" src="roadtrip.mp4" autoplay muted loop></video>
+   <video class="video-slide" src="feelnature.mp4" autoplay muted loop></video>
+   <br>
+   <br>
+   <!--text & heading-->
+<div class="content">
+    <h1>Wounderful<br><span>Mountaineering.</span></h1>
+<p>In other words, the warmth that you feel is real. Soothing Seaside Scenery Of course, people are only part of what make islands so magical—there's also the endlessly appealing, wonderfully calming natural beauty distinctive to places surrounded by water.</p>
+<a href="about.html">Read More</a>
+</div>
+<div class="content">
+    <h1>Camping.<br><span>Enjoy</span></h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, suscipit eius! Sed alias quidem dolorem praesentium quis ut numquam rem. Culpa, eos fuga vero molestiae suscipit iure nulla doloremque. Consectetur.</p>
+<a href="#">Read More</a>
+</div>
+<div class="content active first">
+    <h1>Mountaineering<br><span>Equipments.</span></h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, suscipit eius! Sed alias quidem dolorem praesentium quis ut numquam rem. Culpa, eos fuga vero molestiae suscipit iure nulla doloremque. Consectetur.</p>
+<a href="Gallery.html">Read More</a>
+</div>
+<div class="content">
+    <h1>Road Trip.<br><span>Together</span></h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, suscipit eius! Sed alias quidem dolorem praesentium quis ut numquam rem. Culpa, eos fuga vero molestiae suscipit iure nulla doloremque. Consectetur.</p>
+<a href="#">Read More</a>
+</div>
+<div class="content">
+    <h1>Feel Nature.<br><span>Relax</span></h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, suscipit eius! Sed alias quidem dolorem praesentium quis ut numquam rem. Culpa, eos fuga vero molestiae suscipit iure nulla doloremque. Consectetur.</p>
+<a href="#">Read More</a>
+</div> 
+<!--icons-->
+<div class="media-icons">
+    <a href="https://www.facebook.com/"><i class="bi bi-facebook text-light"></i></a>
+    <a href="https://www.instagram.com/"><i class="bi bi-instagram text-light"></i></a>
+    <a href="https://twitter.com/"><i class="bi bi-twitter text-light"></i></a>
+</div>
+<!--buttons-->
+<div class="slider-navigation">
+<div class="nav-btn"></div>
+<div class="nav-btn"></div>
+<div class="nav-btn"></div>
+<div class="nav-btn"></div>
+<div class="nav-btn"></div>
+</div>
+
+</section>
+
+<script type="text/javascript">
+//javascript of responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
+    contents.classList.toggle("active")
+});
+
+//javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+var slidernav = function(manual){
+btn.forEach(element => {
+    
+});
+
+((btn) => {
+    btn.classList.remove(".active");
+});
+
+slides.forEach((slide) => {
+    content.classList.remove(".active");
+});
+contents.forEach((content) => {
+    slide.classList.remove(".active");
+});
+
+    btns[manual].classList.add(".active");
+    slides[manual].classList.add(".active");
+    
+}
+
+btns.forEach((btn, i) => {
+    btn.addEventListener("click", () =>{
+slidernav(i);
+
+    }) 
+
+});
+
+</script>
+<br>
+<!-- 
+        <div class=" container-fluid top " style="background-image: url(Untitled.jpeg); padding-top: 270px;"   >
+                
+                  <div class="row">
+                    <p class="topp"> Mountaineering's Equipments </p>
+                    
+
+                  </div>
+            </div> 
+         </div>  
+            -->
+
+            
+            <br><br>
+            
+            <div class="container">
+            
+            <p class="text-center" style="font-size: large; font-family: upper case; word-spacing: 2px;" >            
+                <span style="color: #fcb900; font-size: x-large;">Mountaineering</span>  requires a variety of equipment, including technical climbing gear, navigation tools, overnight equipment, <br> proper clothing and footwear, and food and water. Those who engage in mountaineering must not only have the gear necessary <br>to climb the mountain,  but  also the supplies needed to survive on the mountain for several days. <br><br>
+            </p> 
+            </div> 
+            
+            <h4 style="text-align: center;">There are following items are essential for mountaineering and hiking,</h4><br><br>
+
+            <div class="container justify-content-center text-center ">
+                <div class="row" >
+                    <div class="col-md-6   ">
+                        
+                        <h6>1. ROPE</h6>
+                        <h6>2. BELAY</h6>
+                        <h6>3. TENT</h6>
+
+                    </div>
+
+                    <div class="col-md-6     ">
+                        
+                        <h6>4. COMPASS</h6>
+                        <h6>5. HELMET</h6>
+                        <h6>6. COOKSET</h6>
+
+                    </div>
+                
+                </div>
+            </div>  
+        </div>
+        
+        <br><br>
+
+        <div class="container">
+        <div class="row   ">
+            
+            <div class="col-md-6 d-flex flex-column justify-content-center one " >
+                
+                <h2  class=" head border-start border-3 border-warning p-2 "> 1. ROPE </h2><br>
+                <p class="  para  "> 
+                    Ropes are used to help climbers ascend the mountain <br>
+                    safely. When it comes to mountaineering, half ropes are typically the way to go. 
+                    When climbing with half ropes, two ropes are clipped on either side of the climber 
+                    for protection. This strategy reduces rope drag on the wandering routes that are 
+                    often explored when mountaineering.When choosing a climbing rope, mountaineers should consider the rope’s 
+                    diameter, length, and safety ratings.
+                </p>
+            </div> 
+
+            <div class="col-md-6 d-flex justify-content-center text-center" data-aos="flip-right">
+                <img class="oneimg" src="rope.jpg">
+            </div>  
+        
+        </div></div><br><br><br>
+
+        
+        <div class="container">
+        <div class="row " >
+            
+            <div class="col-md-6"  >
+
+                <h2  class=" head border-start border-3 border-warning p-2 "> 2. BELAY  </h2><br>
+                <p class=" para " > 
+                   Belay devices essentially serve as brakes on the climbing rope. Because belay devices are used to manage rope tension and catch the climber if they fall, they are essential to have for climbing safety. The person holding the belay rope, or the belayer, pulls the rope through a belay device as the climber goes up. 
+                </p>
+            </div>
+
+            <div class="col-md-6 text-center " data-aos="flip-right">
+                <img class="twoimg" src="belay.jpg">
+            </div>
+
+        </div><br><br><br><br>
+
+
+        <div class="container">
+         <div class="row " >
+            
+            <div class="col-md-6 " >
+
+                <h2  class=" head border-start border-3 border-warning p-2"> 3. TENT  </h2><br>
+                <p class="  para  " > 
+                    For multi-day mountaineering trips, climbers must <br>
+                    have a durable tent in which to sleep at night. <br>
+                    Having a high-quality tent is especially important when taking 
+                    on winter mountaineering trips. Four-season mountaineering tents offer robust protection against the harsh conditions found at higher altitudes and during winter months.
+                   
+                </p>
+            </div>
+
+            <div class="col-md-6  text-center  " data-aos="flip-right">
+                <img class="threeimg p-2 " src="tent.jpg">
+            </div>
+
+        </div> </div><br><br><br><br>
+
+
+        <div class="container">
+        <div class="row" >
+            
+            <div class="col-md-6 d-flex flex-column justify-content-center" >
+
+                <h2  class=" head border-start border-3 border-warning p-2 "> 4. COMPASS  </h2><br>
+                <p class="   para " > 
+                    When it comes to navigating outdoor terrain, having a compass is a must. 
+                    Compasses are good to have on hand in case a GPS system fails or its battery dies. <br>
+                    Additionally, some compasses are equipped with advanced features that are useful for mountaineering expeditions. <br> For instance, compasses with declination adjustments and sighting mirrors can be used for mountaineers <br> who plan to travel off trail and need more precise navigation.
+                   
+                </p>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-center" data-aos="flip-right">
+                <img class="fourimg" src="compass.jpg">
+            </div>
+
+        </div> </div><br><br><br><br><br>
+
+
+        <div class="container">
+        <div class="row" >
+            
+            <div class="col-md-6  " >
+
+                <h2  class=" head border-start border-3 border-warning p-2" > 5. HELMET  </h2><br>
+                <p class="  para " > 
+                    Helmets are an important part of safely climbing <br>
+                    mountains. Climbing helmets are 
+                    designed to protect mountaineers against rocks that get kicked <br>
+                    loose overhead. Additionally, helmets protect climbers in the case that they hit 
+                    their head on an overhang or slip and collide with a rock face.
+                    
+                </p>
+            </div>
+
+            <div class="col-md-6 text-center" data-aos="flip-right">
+                <img class="fiveimg" src="helmet.jpg">
+            </div>
+
+        </div> </div><br><br><br><br><br>
+
+
+        <div class="container">
+        <div class="row" >
+            
+            <div class="col-md-6 d-flex flex-column justify-content-center" >
+
+                <h2  class=" head border-start border-3 border-warning p-2 "> 6. COOKSET  </h2><br>
+                <p class="  para  " > 
+                    In order to prepare meals at night, mountaineers <br>
+                    must have a small collection of 
+                    pots, pans, and lids. Cups, plates, bowls, and utensils must also be 
+                    readily available. Because of their light weight and high heat conductivity, 
+                    aluminum and titanium cooksets are ideal for mountaineering purposes.
+                    
+                    
+                </p>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-center text-centers" data-aos="flip-right">
+                <img class="siximg" src="cook.jpeg">
+            </div>
+
+        </div> </div><br><br><br>
+
+
+
+       
+
+
+
+       
+
+            
+        
+    </div>
+
+    
+ 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:2000,
+      });
+    </script>
+    <br>
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted" style="color:rgb(0, 0, 0) ;
+background-image: linear-gradient(rgb(63, 63, 66),rgb(53, 50, 52),rgb(52, 51, 56));">
+	<!-- Section: Social media -->
+	<section class="d-flex justify-content-center justify-content-lg-between p-3 border-bottom border-warning">
+	  <!-- Left -->
+	  <div class="me-5 d-none d-lg-block">
+		<span class="text-light">Get connected with us on social networks:</span>
+	  </div>
+	  <!-- Left -->
+  
+	  <!-- Right -->
+	  <div>
+		<a href="https://www.facebook.com/" class="me-4 text-reset">
+            <i class="media-icons bi bi-facebook text-light"></i>
+		</a>
+		<a href="https://twitter.com/" class="me-4 text-reset">
+            <i class="media-icons bi bi-twitter text-light"></i>
+		</a>
+		<a href="https://www.instagram.com/" class="me-4 text-reset">
+            <i class="media-icons bi bi-instagram text-light"></i>
+		</a>
+	  </div>
+	  <!-- Right -->
+	</section>
+    <br>
+    <br>
+	<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-4"> -->
+            <!-- Content -->
+            <div class="container">
+			<h6 class="text-uppercase fw-bold mb-4 text-light">
+               <img src="mountain-icon-high-mountains-with-sharp-top_379823-4198.avif" width="30px" height="30px" font-family="uppercase" > MOUNTAINEERING
+              </h6>
+              </div>
+              <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-4">
+              <h6 class="text-uppercase fw-bold mb-4 text-light">Contact</h6>
+              <p class="text-light">Usman Plaza, Flat# 1, Jinnah Avenue, New Mal Kuri Road, Islamabad. Zip/Postal Code: 44000</p>
+              <p class="text-light"><i class="media-icons bi bi-house-door-fill"></i> info@karakorumexpedition.com</p>
+              <p class="text-light">
+                <i class="media-icons bi bi-envelope-fill"></i>
+                Licence# ID-1495
+              </p>
+              <p class="text-light"><i class="media-icons bi bi-telephone-fill"></i> + 92 31 234 567 89</p>
+              <p class="text-light"><i class="media-icons bi bi-printer"></i> + 92 31 234 567 89</p>
+              <p class="text-light">
+                National Tax Number:
+<br>
+<br>
+24/7 customer support at +923226282422
+              </p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <h6 class="text-light">SITE LINK</h6> 
+            <br>
+            <p class="text-light">
+                <a href="about.html" class="text-reset">About</a>
+              </p>
+              <p class="text-light">
+                <a href="organization.html" class="text-reset">Organization</a>
+              </p>
+              <p class="text-light">
+                <a href="equipmments.html" class="text-reset">Equipments</a>
+              </p>
+              <p class="text-light">
+                <a href="Gallery.html" class="text-reset">Gallery</a>
+              </p>
+              <p class="text-light">
+                  <a href="contact.html" class="text-reset">Contact-Us</a>
+                </p>
+        </div>
+        
+       
+        <div class="col-md-4">
+            
+            <img src="k2-base-camp-yrek-370x260.jpg" width="100px" height="100px" class="box">
+            <img src="f1.jpg" width="100px" height="100px" class="box">
+            <img src="image - Copy.jpg" width="100px" height="100px" class="box">
+            <img src="f2.jpg" width="100px" height="100px" class="box">
+  
+            <img src="f3.jpg" width="100px" height="100px" class="box">
+            <img src="f4.jpg" width="100px" height="100px" class="box">
+            <img src="f5.jpg" width="100px" height="100px" class="box">
+            <img src="f6.jpg" width="100px" height="100px" class="box">
+        
+       </div>
+    </div>
+    </div>
+    <br>
+    <!-- Section: Social media -->
+	<section class="d-flex justify-content-center justify-content-lg-between p-3 border-top border-warning">
+        <!-- Left -->
+        <div class=" me-5 d-none d-lg-block">
+          <span class="text-light p-lg-5">Copyright © 2022 Mountaineering Pvt Ltd. All Rights Reserved.
+
+          </span>
+        </div>
+        <!-- Left -->
+    
+        <!-- Right -->
+        <div>
+
+            <span class="text-light p-lg-5"> Terms and Conditions.</span>
+           
+        </div>
+        <!-- Right -->
+      </section>
+  <!-- Footer -->
+
+
+</body>
+</html>
