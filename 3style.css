@@ -1,0 +1,73 @@
+
+.top{
+	width: 1310px;
+	height: 650px ;
+}
+
+.topp{
+    text-align:center;
+    color: white; 
+    font-size: 60px;
+    font-family: upper case;
+    letter-spacing: 1px;
+
+     position: relative;
+            animation: topp;
+            animation-duration: 4s;
+            animation-timing-function: infinite ;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+        @keyframes topp{
+            from{
+                left: -1800px;
+            }
+            to{
+                left: -50px;
+            }
+     }
+ 
+
+.oneimg{
+	height: 450px ;
+	width: 420px;
+}
+
+.para{
+	font-size: large;
+
+	word-spacing: 2px;
+
+	
+}
+
+.head{
+	letter-spacing: 2px;
+}
+
+.twoimg{
+	height: 400px ;
+	width: 400px;
+}
+
+.threeimg{
+	height: 380px ;
+	width: 460px;
+}
+
+.fourimg{
+	height: 380px ;
+	width: 580px;
+}
+
+.fiveimg{
+	height: 340px ;
+	width: 340px;
+}
+
+.siximg{
+	height: 370px ;
+	width: 370px;
+}
+
+

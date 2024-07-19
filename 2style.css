@@ -1,0 +1,50 @@
+.para{
+	font-size: large;
+}
+
+.btn{
+    color: white;
+   
+    font-family: Raleway;
+    background: #fcb900;
+    border-radius: 19px;
+}
+
+.btn:hover
+{
+    background: #fcb900;
+    color: black;
+    
+}
+
+.bor{
+	color: #fcb900;
+}
+
+.top{
+    width: 1310px;
+    height: 650px ;
+}
+
+.topp{
+    text-align:center;
+    color: white; 
+    font-size: 60px;
+    font-family: upper case;
+    letter-spacing: 1px;
+
+     position: relative;
+            animation: topp;
+            animation-duration: 4s;
+            animation-timing-function: infinite ;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+        @keyframes topp{
+            from{
+                left: -1800px;
+            }
+            to{
+                left: -50px;
+            }
+     }
